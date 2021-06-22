@@ -1,0 +1,67 @@
+.bottom-pagination {
+    .el-pagination {
+        padding: 0;
+        white-space: normal;
+        font-weight: 100;
+
+        .btn-prev,
+        el-pager li {
+            margin-right: 10px;
+        }
+
+        .el-select {
+            float: right;
+            width: 100%
+        }
+
+        .el-input--suffix {
+            .el-input__inner {
+                height: 30px
+            }
+
+        }
+
+        .el-input__icon {
+            line-height: 30px;
+            text-align: center;
+        }
+
+    }
+}
+
+@media (min-width: 992px) {
+    .pagination > li > span {
+        padding: 2px 6px !important;
+    }
+
+}
+
+@media (min-width: 600px) {
+    .bottom-pagination {
+        .el-pagination .el-select .el-input {
+            float: right;
+        }
+    }
+}
+
+@media (max-width: 599px) {
+
+    .bottom-pagination {
+        .el-pagination .el-select .el-input {
+            width: 100% !important;
+        }
+
+        .el-pager li {
+            margin-bottom: 5px !important;
+        }
+
+        .right {
+            display: none
+        }
+
+        .btn-prev,
+        .el-pager {
+            float: left
+        }
+    }
+}

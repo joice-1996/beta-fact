@@ -1,0 +1,38 @@
+.collection-main {
+    .total-count {
+        width: auto;
+        margin-right: 20px;
+        margin-top: 10px;
+
+        div {
+            font-size: 16px;
+        }
+    }
+
+    .drawer-div {
+        .popup-scroll .icon-input:nth-child(3n + 1) {
+            clear: left;
+        }
+    }
+}
+
+.update-collection-drawer {
+    .colum-style-cover {
+        padding-left: 60px;
+    }
+}
+
+.import-collection {
+    p {
+        line-height: 22px;
+        font-size: $font-size
+    }
+}
+
+@media(min-width:768px) {
+    .collection-details {
+        .colum-style {
+            height: 60px;
+        }
+    }
+}

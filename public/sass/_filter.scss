@@ -1,0 +1,127 @@
+/*** FILTER ***/
+
+.filter-div {
+    position: fixed;
+    background: $secondary-color;
+    z-index: 11;
+    top: 0;
+    right: -280px;
+    height: 100%;
+    bottom: 0;
+    width: 280px;
+    overflow-y: auto;
+    padding-bottom: 15px;
+    @include transition($time:0.3s);
+    padding: 0;
+
+
+    h4 {
+        color: #fff;
+    }
+
+    .el-button {
+        padding: 12px
+    }
+
+
+    .el-radio__label {
+        color: #fff;
+    }
+
+    .el-radio__input.is-checked + .el-radio__label {
+        color: #fff !important
+    }
+
+    &.width {
+        right: 0;
+
+        &:before {
+            opacity: 1;
+            display: block
+        }
+    }
+
+    .el-input__inner {
+        height: 38px !important;
+        line-height: 38px !important;
+        @include border-radius(4px !important);
+        padding: 0 12px !important;
+        background: #fff !important;
+    }
+
+    .ps {
+        height: calc(100% - 115px)
+    }
+}
+
+
+.filter-close {
+    color: #fff !important;
+    font-size: 16px !important;
+    margin: 16px 15px 0 0;
+}
+
+
+.filter-head,
+.filter-footer {
+    height: 50px;
+}
+
+.filter-head {
+    margin-bottom: 10px;
+    color: #fff;
+    padding-left: 15px;
+}
+
+
+
+.input-item {
+    margin-bottom: 15px;
+}
+
+.filter-footer .el-button {
+    @include border-radius(50px !important);
+}
+
+
+/*** END FILTER ***/
+
+.left-nav .ico {
+    float: right;
+    margin: 11px 10px 0 0;
+    font-size: 11px;
+}
+
+.filter-items {
+    float: left;
+    background: #ebeef5;
+    padding: 6px 10px;
+    margin: 10px 10px 0 0;
+    min-width: 100px;
+    border: 1px solid #d7e0f1;
+    @include border-radius(4px);
+
+    span {
+        margin-top: 1px;
+        margin-left: 5px;
+    }
+}
+
+.filter-bg {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .5);
+    z-index: 11;
+    transition: all 0s ease 0.5s;
+    opacity: 0;
+    display: none;
+
+    &.show {
+        opacity: 1
+    }
+}

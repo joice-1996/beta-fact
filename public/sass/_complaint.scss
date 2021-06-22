@@ -1,0 +1,42 @@
+.complaint-main {
+    body {
+        background: #fff;
+    }
+
+    .ellipsis {
+        display: inline-block;
+        width: 180px;
+        white-space: nowrap;
+        overflow: hidden !important;
+        text-overflow: ellipsis;
+    }
+
+    .complaint-img {
+        margin-top: 5px;
+        font-size: 15px;
+    }
+
+    .complaint-table {
+        .status-select {
+            input[type="text"] {
+                width: 86px;
+                margin-left: 8px;
+                height: 26px !important;
+            }
+
+        }
+
+        .el-select__caret {
+            line-height: 42px !important;
+        }
+    }
+
+    .el-date-editor.followup-date .el-input__prefix {
+        display: none;
+    }
+
+    .el-select .el-input .el-select__caret.el-input__icon {
+        line-height: 50px;
+    }
+
+}

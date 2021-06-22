@@ -1,0 +1,16 @@
+.permission-management-main{
+    table{
+        border: 1px solid $table-border; border-right: 0;
+        th{
+            background: #f8f8f8;
+        }
+        td, th{
+            border-bottom:1px solid $table-border; border-right:1px solid $table-border;
+            padding: 10px;
+        }
+        .switch{
+            margin: 5px 0;
+        }
+        tr:nth-child(odd) {background: #F5F7FA}
+    }
+}

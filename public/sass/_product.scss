@@ -1,0 +1,14 @@
+.product-main{
+
+	.product-table{
+		.el-table{
+			tr{
+				th:first-child .cell,
+				td:first-child .cell {
+				    padding: 0 !important;
+				}
+			}
+		}
+	}
+	
+}

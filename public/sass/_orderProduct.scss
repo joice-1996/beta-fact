@@ -1,0 +1,20 @@
+.order-product-main{
+  
+  [v-cloak] {
+    display: none;
+  }
+
+  .inline {
+    display: inline-block;
+  }
+
+  .total-count {
+    width: auto;
+    margin-right: 20px;
+    margin-top: 8px;
+    div {
+      font-size: 16px;
+    }
+  } 
+  
+}

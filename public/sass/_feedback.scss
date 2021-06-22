@@ -1,0 +1,8 @@
+.el-table {
+    .feedback-description-td {
+        .cell {
+            max-height: 120px;
+            overflow-y: auto;
+        }
+    }
+}

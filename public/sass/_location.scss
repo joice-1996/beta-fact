@@ -1,0 +1,247 @@
+.location-main {
+    .active {
+        background-color: white !important;
+    }
+
+    .activeLocation {
+        background-color: #f3f9fd;
+        @include border-radius(4px);
+        border: 1px solid #cce4f5;
+    }
+
+    .location-filter {
+        justify-content: flex-end;
+        display: flex;
+    }
+
+    .google-map {
+        width: 100%;
+        height: 360px;
+        margin: 0 auto;
+        background: gray;
+    }
+}
+
+.location {
+    .timeline-icon::after {
+        background: #dcd9d9;
+        content: "";
+        height: 53px;
+        left: 28px;
+        top: 46px;
+        position: absolute;
+        width: 1px;
+    }
+
+    &.new-map {
+        .customMarker {
+            span {
+                display: inline-block;
+                background: $secondary-color;
+                padding: 3px 5px;
+                @include border-radius(3px);
+                color: #fff;
+                margin-right: 5px;
+                position: relative;
+                top: 2px;
+                border: 1px solid #375c9e;
+            }
+
+            img {
+                width: 38px;
+                height: 38px;
+                @include border-radius(50%);
+            }
+        }
+    }
+}
+
+.timeline-centered .timeline-entry .timeline-entry-inner {
+    position: relative;
+    margin-left: -20px;
+    display: block;
+}
+
+.timeline-centered .timeline-entry .timeline-entry-inner .timeline-label {
+    position: relative;
+    padding: 15px 10px;
+    min-height: 70px;
+    margin-left: 60px;
+}
+
+.timeline-centered .timeline-entry .timeline-entry-inner .timeline-label span.date-time {
+    display: block;
+    font-size: 13px;
+    color: rgba($light-text, .8);
+    margin-top: 4px;
+}
+
+.timeline-label.activeLocation {
+    background: #fff !important;
+    border-color: $primary-color !important;
+}
+
+
+
+.timeline-centered .timeline-entry .timeline-entry-inner .timeline-icon {
+    background: #fff;
+    color: $primary-color;
+    display: block;
+    width: 36px;
+    height: 36px;
+    @include border-radius(20px);
+    text-align: center;
+    border: solid 1px #dcd9d9;
+    line-height: 35px;
+    font-size: 18px;
+    float: left;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.location-map {
+    padding: 10px;
+    background: #f7f7f7;
+    outline: 1px solid #e8e8e8;
+}
+
+.location-list-main {
+    overflow-y: auto;
+    max-height: 392px;
+}
+
+@media(min-width:768px) {
+    .location-main .custom-datepicker {
+        margin-left: 15px
+    }
+}
+
+@media(min-width:992px) {
+    .location-left-main {
+        padding-right: 50px;
+    }
+}
+
+@media(max-width:767px) {
+    .location-main {
+        .location-filter {
+            flex-direction: column;
+            margin-top: 15px;
+
+            .select-round {
+                width: 100%;
+            }
+
+            .el-select {
+                margin-bottom: 15px;
+            }
+        }
+    }
+}
+
+.location-tab {
+    a {
+        float: left;
+        position: relative;
+        background: #fff;
+        color: #848484;
+        height: 60px;
+        @include border-radius(4px);
+        width: 60px;
+        margin-bottom: 10px;
+        line-height: 62px;
+        text-align: center;
+        border: 1px solid #ccc;
+
+        &.active {
+            background: $primary-color !important;
+            color: #fff;
+            border-color: #e41931;
+        }
+
+        .icon-placeholder {
+            font-size: 22px;
+        }
+
+        .icon-activity {
+            font-size: 30px;
+        }
+
+        .icon-location {
+            font-size: 28px;
+        }
+
+    }
+
+    p {
+        border-bottom: 1px solid #ddd;
+        margin-bottom: 25px;
+    }
+}
+
+
+
+@media(min-width:992px) {
+
+    .location-tab {
+        margin-top: 40px;
+
+        a.active::after {
+            content: '';
+            border-left: 20px solid $primary-color !important;
+            border-top: 20px solid transparent;
+            border-bottom: 20px solid transparent;
+            position: absolute;
+            right: -8px;
+            top: 9px;
+        }
+    }
+}
+
+@media(max-width:991px) {
+    .location-tab {
+        margin-top: 25px;
+
+        a {
+            margin-right: 15px;
+
+            &.active::after {
+                content: '';
+                position: absolute;
+                right: 0;
+                bottom: -10px;
+                left: 0;
+                width: 0;
+                height: 0;
+                border-left: 10px solid transparent;
+                border-right: 10px solid transparent;
+                border-top: 10px solid $primary-color;
+                margin: auto;
+            }
+        }
+    }
+
+}
+
+.search-keyword.datepicker .el-input__inner {
+    border-radius: 50px !important;
+    background: #f7f7f7 !important;
+    left: auto;
+    padding: 0 20px !important;
+}
+
+.location {
+
+    &.google-map-waypoint,
+    &.new-map,
+    &.google-map-waypoint2 {
+        width: 100%;
+        height: 360px;
+        margin: 0 auto;
+        background: gray;
+    }
+}
+
+.gps-fake-location {
+    margin-top: 10px;
+}

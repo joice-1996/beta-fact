@@ -1,0 +1,31 @@
+  /*!
+ * SF v3 (http://salesfokuz.com)
+ * Copyright Trinitymascot pvt ltd.
+ * http://salesfokuz.com v3 UI design-nidhin
+ * Copyright Trinitymascot pvt ltd.
+ * @author: nidhin
+ * @address: nidhinndl@gmail.com
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+
+
+  /*! main css v3 | nidhinndl@gmail.com */
+
+  
+
+  :root {
+      --text-color: #000;
+      --primary-color: #ed273f;
+      --font-bold-primary: 700;
+      --secondary-color: #061838;
+      --third-color: #097cf7;
+      --input-text-color: #878788;
+      --input-border-color: #dedede;
+      --font-size: 13px;
+      --primary-btn: #ed273f;
+      --shadow: 5px 5px 12px 0 #f1f1f1;
+      --label-color: #7b7b7b;
+      --light-text: #7b7b7b;
+  }
+
+

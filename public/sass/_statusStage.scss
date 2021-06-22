@@ -1,0 +1,288 @@
+/** Stage style **/
+
+.stage {
+    @include border-radius(4px);
+    color: #fff;
+    display: inline-block;
+    min-width: 50px;
+    height: 20px;
+    line-height: 18px;
+    font-size: 12px;
+    text-align: center;
+    padding: 0 6px;
+
+    &.new {
+        background: rgba(255, 114, 59, .2);
+        color: rgb(255, 114, 59);
+        border: 1px solid rgba(255, 114, 59, .3);
+    }
+
+    &.proposal {
+        background: rgba(102, 51, 204, .2);
+        color: rgb(102, 51, 204);
+        border: 1px solid rgba(102, 51, 204, .3);
+    }
+
+    &.completed {
+        background: rgba(88, 197, 34, .2);
+        color: rgb(88, 197, 34);
+        border: 1px solid rgba(88, 197, 34, .3);
+    }
+
+    &.failed {
+        background: rgba(246, 41, 94, .2);
+        color: rgb(246, 41, 94);
+        border: 1px solid rgba(246, 41, 94, .3);
+    }
+
+    &.inprogress {
+        background: rgba(23, 128, 225, .2);
+        color: rgb(23, 128, 225);
+        border: 1px solid rgba(23, 128, 225, .3);
+    }
+
+    &.invoice-sent {
+        background: rgba(182, 24, 185, .2);
+        color: rgb(182, 24, 185);
+        border: 1px solid rgba(182, 24, 185, .3);
+    }
+
+    &.followup {
+        background: rgba(0, 148, 217, .2);
+        color: rgb(0, 148, 217);
+        border: 1px solid rgba(0, 148, 217, .3);
+    }
+
+    &.negotiation {
+        background: rgba(0, 204, 204, .2);
+        color: rgb(0, 204, 204);
+        border: 1px solid rgba(0, 204, 204, .3);
+    }
+
+}
+
+/**End Stage style **/
+
+
+/** Status style **/
+
+.status {
+    @include border-radius (4px);
+    background: #fff;
+    display: inline-block;
+    min-width: 50px;
+    height: 20px;
+    line-height: 18px;
+    font-size: 12px;
+    text-align: center;
+    padding: 0 5px;
+
+    &.warm {
+        color: rgb(245, 150, 34);
+        border: 1px solid rgb(245, 150, 34);
+    }
+
+    &.hot {
+        color: rgb(233, 39, 63);
+        border: 1px solid rgb(233, 39, 63);
+    }
+
+    &.cold {
+        color: rgb(13, 191, 239);
+        border: 1px solid rgb(13, 191, 239);
+    }
+
+    &.new {
+        color: rgb(255, 116, 8);
+        border: 1px solid rgb(255, 116, 8);
+    }
+
+    &.complete,
+    &.approved {
+        color: rgb(88, 197, 34);
+        border: 1px solid rgb(88, 197, 34);
+    }
+
+    &.cancel {
+        color: rgb(234, 76, 88);
+        border: 1px solid rgb(234, 76, 88);
+    }
+    &.cancelled {
+        color: rgb(252 134 33);
+        border: 1px solid rgb(252 134 33);
+    }
+
+    &.reschedule {
+        color: rgb(105, 133, 215);
+        border: 1px solid rgb(105, 133, 215);
+    }
+
+    &.punchin {
+        color: rgb(0, 189, 122);
+        border: 1px solid rgb(0, 189, 122);
+    }
+
+    &.punchout {
+        color: rgb(47, 72, 88);
+        border: 1px solid rgb(47, 72, 88);
+    }
+
+    &.pending {
+        color: rgb(255, 116, 8);
+        border: 1px solid rgb(255, 116, 8);
+    }
+
+    &.reschedule {
+        color: rgb(0, 204, 204);
+        border: 1px solid rgb(0, 204, 204);
+    }
+
+    &.followup {
+        color: rgb(0, 148, 217);
+        border: 1px solid rgb(0, 148, 217);
+    }
+
+    &.upcoming {
+        color: rgb(19, 178, 231);
+        border: 1px solid rgb(19, 178, 231);
+    }
+
+    &.rejected {
+        color: rgb(251, 41, 41);
+        border: 1px solid rgb(251, 41, 41);
+    }
+}
+
+
+/**End Status style **/
+
+
+/** Status Color style **/
+
+.status-approved {
+    color: rgb(88, 197, 34);
+}
+
+.status-pending {
+    color: rgb(255, 116, 8);
+}
+
+.status-rejected {
+    color: rgb(251, 41, 41);
+}
+
+/** End Status Color style **/
+
+/** Status Select Box **/
+
+.status-select {
+    border-radius: 50px;
+
+    input[type="text"] {
+        background: transparent;
+        border: 0;
+        height: 18px;
+        width: 70px;
+        font-size: 11px;
+        padding: 0 10px;
+    }
+
+    &.large {
+        input[type="text"] {
+            height: 30px;
+            width: auto;
+            font-size: 13px;
+        }
+
+        .el-input {
+            .el-select__caret {
+                font-size: 14px !important;
+            }
+        }
+    }
+
+    &.open {
+        border: 1px solid #f39090;
+
+        input[type="text"] {
+            color: #a90e0e;
+
+            &::placeholder {
+                color: #a90e0e
+            }
+        }
+
+        .el-input .el-select__caret {
+            color: #a90e0e
+        }
+
+        .el-input__inner {
+            border-color: #a90e0e
+        }
+
+    }
+
+    &.new {
+        border: 1px solid #90d6f9;
+
+        input[type="text"] {
+            color: #00a0ef
+        }
+
+        .el-input .el-select__caret {
+            color: #00a0ef
+        }
+    }
+
+    &.closed {
+        border: 1px solid #9ad69a;
+
+        input[type="text"] {
+            color: #0e8c0e;
+
+            &::placeholder {
+                color: #0e8c0e
+            }
+        }
+
+        .el-input .el-select__caret {
+            color: #0e8c0e
+        }
+
+        .el-input__inner {
+            border-color: #0e8c0e
+        }
+
+    }
+
+    .el-input__suffix {
+        top: 8px;
+    }
+
+    .is-focus {
+        .el-input__suffix {
+            top: -8px;
+        }
+
+        .status-select {
+            .large {
+                .el-input__suffix {
+                    top: 5px;
+                }
+
+                .status-select.large .is-focus .el-input__suffix {
+                    top: -5px;
+                }
+            }
+
+        }
+    }
+
+    .el-input {
+        .el-select__caret {
+            font-size: 12px !important
+        }
+    }
+}
+
+/** End Status Select Box **/

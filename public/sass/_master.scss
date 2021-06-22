@@ -1,0 +1,162 @@
+
+ @media (max-width: 767px) {
+
+     .master-campaign,
+     .master-xs-mt-none {
+         &.main {
+             padding-top: 0;
+             margin-top: 0 !important
+         }
+     }
+ }
+
+ .additional-activity-main {
+     .search-keyword {
+         margin-right: 4px;
+     }
+ }
+
+ .daily-gram-rate-main {
+     .daily-gram-rate {
+         font-size: 14px;
+         color: $light-text;
+         border-top: 1px solid #ececf1;
+         padding-top: 20px;
+
+         h4 {
+             margin: -2px 0 0 8px;
+         }
+
+         .inner {
+             padding: 0 15px;
+
+             &.first h4 {
+                 color: #1565c0;
+             }
+
+             &.second h4 {
+                 color: #ff6f00;
+             }
+
+             .third h4 {
+                 color: #00c6f3;
+             }
+         }
+
+         &.daily-gram-rate .inner,
+         &.daily-gram-rate .inner.second,
+         &.daily-gram-rate .inner.third {
+             margin-top: 8px;
+         }
+     }
+
+
+
+     .deactive {
+         color: #ccc;
+     }
+
+     .user-overview .inner {
+         background: #fff;
+         @include border-radius(6px);
+     }
+
+     .top-info-col {
+         &.total {
+             span {
+                 color: #1565c0;
+             }
+         }
+
+         &.bde {
+             span {
+                 color: #ff6f00;
+             }
+         }
+
+         &.asm {
+             span {
+                 color: #651fff;
+             }
+         }
+
+         &.rsm {
+             span {
+                 color: #00c6f3;
+             }
+         }
+
+         &.online {
+             span {
+                 color: green;
+             }
+
+             .top-info-col.offline span {
+                 color: #ed4c4c;
+             }
+         }
+     }
+
+ }
+
+ @media (min-width: 600px) {
+     .daily-gram-rate-main {
+         .user-overview {
+             display: flex;
+
+             > div {
+                 flex: 1;
+                 padding: 0 15px;
+             }
+         }
+     }
+
+
+ }
+
+ @media (max-width: 599px) {
+     .daily-gram-rate-main {
+         .user-overview > div {
+             width: 50%;
+             float: left;
+             padding: 0 15px;
+         }
+     }
+
+     .daily-gram-rate {
+         .inner {
+             padding-bottom: 15px;
+         }
+     }
+ }
+
+ .master-vdo-view {
+     .vjs_video_3-dimensions {
+         width: 100% !important;
+     }
+
+     .video-js {
+         width: 100% !important;
+     }
+ }
+
+ .master-lead-source {
+     .enable-textbox {
+         padding-left: 60px !important;
+     }
+ }
+
+
+ .masterMain{
+    .action-delete {
+        padding: 0 !important;
+        border: 0;
+        font-size: 15px !important;
+        color: $text-color
+    }   
+
+ }
+
+ @media (min-width: 768px) {
+
+}

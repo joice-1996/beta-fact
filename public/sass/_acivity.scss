@@ -1,0 +1,168 @@
+.activity-main {
+    .activity-icon {
+        float: left;
+        margin-right: 8px;
+
+        &.icon-visit {
+            font-size: 14px;
+        }
+
+        &.icon-followup {
+            margin-top: 2px;
+            font-size: 12px;
+        }
+
+        &.activity-icon {
+            margin-top: 2px;
+        }
+
+        &.el-icon-phone-outline,
+        &.el-icon-message.activity-icon {
+            margin-top: 4px;
+        }
+
+    }
+
+    .el-icon-chat-square.activity-icon {
+        margin-top: 5px;
+        font-size: 14px;
+    }
+
+    .input-item > div {
+        margin-bottom: 0;
+    }
+
+    .el-radio.activity-filter {
+        margin: 15px 0 5px;
+    }
+
+    .activity-filter-bottom {
+        border-top: 1px solid #112954;
+        padding-top: 5px;
+    }
+}
+
+.activity-view-popup {
+    .el-loading-mask {
+        position: fixed !important;
+    }
+
+    .lead-activity-content span {
+        width: 180px;
+    }
+
+    .lead-detail-distance {
+        background: #eee;
+        margin-top: 15px;
+        padding: 15px;
+
+        .bar {
+            left: -15px;
+            margin-top: 12px;
+        }
+    }
+
+    .lead-detail-km-digit {
+        font-size: 12px;
+        margin-top: 15px;
+    }
+
+
+    .status {
+        font-size: 11px;
+        height: 16px;
+        line-height: 16px;
+    }
+
+    .google-map {
+        width: 100%;
+        height: 350px
+    }
+
+    .location-btns {
+        padding-bottom: 30px;
+
+        a {
+            @include border-radius(50px);
+            border: 1px solid $border-color;
+            padding: 10px 12px;
+            margin: 0 3px;
+
+            &.active {
+                background: $secondary-color !important;
+                color: #fff;
+                border-color: $secondary-color
+            }
+        }
+
+        border-bottom: 1px solid $border-color;
+    }
+
+    .details {
+        display: flex;
+        flex-wrap: wrap;
+
+        .colum-style {
+            h5 {
+                word-break: break-word;
+            }
+        }
+    }
+}
+
+.bpc-activity{
+    .mrgtp {
+      margin-top: 20px;
+    }
+
+    .el-icon-location-outline {
+      font-size: $font-size + 4;
+    }
+}
+
+@media (min-width: 992px) {
+    .lead-activity-content .colum-style:nth-child(3n+1) {
+        clear: left
+    }
+
+    .activity-view-popup {
+        .colum-style {
+            flex: 0 0 33.333%;
+        }
+    }
+}
+
+
+@media (max-width: 991px) {
+    .activity-view-popup {
+        .colum-style {
+            flex: 0 0 50%;
+        }
+    }
+}
+
+@media (max-width: 599px) {
+    .lead-activity-content {
+        i {
+            display: none;
+        }
+
+        span {
+            display: block;
+        }
+
+        p {
+            margin-bottom: 12px;
+        }
+    }
+
+    .lead-detail-distance .bar {
+        left: 8px;
+    }
+
+    .activity-view-popup {
+        .colum-style {
+            flex: 0 0 100%;
+        }
+    }
+}

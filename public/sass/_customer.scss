@@ -1,0 +1,49 @@
+.customer-details {
+    .colum-cover {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .colum-style {
+        flex: 0 0 33.333%;
+        padding: 0 15px;
+        margin-bottom: 22px;
+
+        &.phone-no {
+            h5 {
+                display: inline-block;
+                margin-right: 8px;
+            }
+        }
+    }
+}
+
+.customer-code-col {
+    .customer-code, .code-edit-form {
+        width: calc(100% - 60px);
+        float: left;
+    }
+
+    .icons {
+        width: 60px;
+        float: right;
+        text-align: right;
+
+    }
+}
+.customer-list-table{
+    tr{
+        &.deactive{
+            td{
+                opacity: 0.3;
+            }
+        }
+    }
+}
+@media(max-width:767px) {
+    .customer-details {
+        .colum-style {
+            flex: 0 0 100%;
+        }
+    }
+}

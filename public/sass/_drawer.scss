@@ -1,0 +1,233 @@
+    .drawer-bg {
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 11
+    }
+
+    .drawer-div {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        background: #fff;
+        height: 100%;
+        z-index: 12;
+
+        .el-input__inner {
+            background-color: inherit !important;
+        }
+
+        .el-date-editor--time {
+            .el-icon-time {
+                display: none;
+            }
+        }
+    }
+
+    .drawer-footer {
+        height: 50px;
+
+        .el-button {
+            @include border-radius(50px)
+        }
+    }
+
+    .drawer-head {
+        border-bottom: 1px solid #ddd;
+        margin: 0 -15px 30px;
+        height: 70px;
+        padding: 20px 30px;
+
+        h4 {
+            font-size: 20px;
+            margin: 0;
+            color: $secondary-color;
+        }
+    }
+
+    .drawer-close-btn {
+        cursor: pointer;
+        font-size: 15px;
+        background-color: transparent;
+        width: 26px;
+        height: 26px;
+        float: right;
+        border: 2px solid $primary-color;
+        @include border-radius(50px);
+        text-align: center;
+        color: $primary-color;
+        line-height: 22px;
+        font-weight: 600;
+    }
+
+    .icon-input {
+        .input-icon {
+            background: #e6697e;
+            width: 28px;
+            height: 28px;
+            @include border-radius(50px);
+            text-align: center;
+            color: #fff;
+            line-height: 28px !important;
+            float: left;
+            position: absolute;
+            left: 0;
+            top: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            &.icon-tax-1 {
+                font-size: 9px;
+                line-height: 30px !important;
+            }
+
+            &.icon-lead {
+                font-size: 16px;
+                line-height: 32px !important;
+            }
+
+            &.icon-visit {
+                font-size: 15px;
+                padding-top: 3px;
+            }
+
+            &.icon-calendar-1,
+            &.icon-product,
+            &.icon-campian {
+                font-size: 13px;
+                padding-top: 1px;
+            }
+
+            &.icon-pincode {
+                font-size: 15px;
+                padding-top: 2px;
+            }
+
+            &.icon-rupee {
+                font-size: 11px;
+                padding-top: 2px;
+            }
+
+            &.icon-module {
+                font-size: 11px;
+                padding-top: 1px;
+            }
+
+            &.icon-reason {
+                font-size: 10px;
+                padding-top: 2px;
+            }
+
+            &.icon-gold {
+                font-size: 16px;
+                padding-top: 1px;
+            }
+
+            &.icon-title {
+                font-size: 15px;
+                padding-top: 3px;
+            }
+
+            &.el-icon-document {
+                font-size: 15px;
+            }
+
+            &.el-icon-school {
+
+                font-size: 15px;
+            }
+
+            &.el-icon-postcard {
+
+                font-size: 16px;
+            }
+
+        }
+
+        &.add {
+            .el-input {
+                width: calc(100% - 95px) !important;
+                float: left;
+                margin-left: 45px;
+            }
+
+            .add-btn-small {
+                position: absolute;
+                top: 30px;
+                right: 0;
+            }
+        }
+
+        .help-block,
+        .error {
+            float: left;
+            width: 100%;
+            padding-left: 45px;
+        }
+
+        .el-input,
+        .el-textarea,
+        .el-date-editor {
+            width: calc(100% - 45px) !important;
+            float: right;
+        }
+
+        .el-input__icon {
+            display: none;
+        }
+
+        label {
+            font-size: 12px !important;
+            color: #7b7b7b;
+            padding-left: 45px;
+        }
+
+        .el-textarea {
+            margin-top: 5px;
+        }
+
+        .el-date-editor {
+
+            .el-range-input,
+            .el-range-separator {
+                text-align: left !important
+            }
+        }
+
+        &.multi-select {
+            .el-input__inner {
+
+                height: auto !important;
+                line-height: 30px !important;
+                border-radius: 0px !important;
+            }
+
+        }
+
+        .el-select__tags {
+            padding-left: 38px;
+        }
+
+    }
+
+
+    .drawer-transition-enter-active {
+        transition: all .4s ease;
+    }
+
+    .drawer-transition-leave-active {
+        transition: all .4s ease;
+    }
+
+    .drawer-transition-enter,
+    .drawer-transition-leave-to {
+        transform: translateX(10px);
+        opacity: 0;
+    }

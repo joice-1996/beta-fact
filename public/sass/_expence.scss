@@ -1,0 +1,42 @@
+.addexpense-popup {
+    .icon-input .el-input__inner {
+        background: transparent;
+    }
+
+    .special-approval label.el-checkbox {
+        padding-left: 5px !important;
+    }
+
+    .popup-color-box {
+        padding: 20px 15px 5px;
+    }
+}
+
+.expense-main{
+    .user-name{
+        color: $text-color; margin-right: 10px;
+    }
+    .user-id{
+        color: $light-text; font-size: 12px;
+    }
+
+    .table-wrapper.expense-list{
+        .el-table tr th:first-child .cell {
+            padding-left: 15px;
+        }
+        .el-table tr td:first-child .cell {
+            padding-left: 15px;
+        }
+    }
+    
+}
+
+.expense-list .el-table__footer .cell {
+  font-weight: bold;
+}
+
+@media (min-width: 1280px) and (max-width: 1365px) {
+    .expense.drawer-div {
+        width: 75%;
+    }
+}

@@ -1,0 +1,168 @@
+.attendance-main {
+    .atte-location-icon {
+        font-size: 18px;
+    }
+
+    .input-field .tableRow {
+        display: table;
+        width: 100%;
+        max-width: 600px;
+
+        .search-keyword.select.left-fld {
+            display: table-cell;
+            vertical-align: middle;
+        }
+
+        .search-keyword.datepicker.right-fld {
+            display: table-cell;
+            vertical-align: middle;
+
+            .el-input__inner {
+                padding: 0 0 0 15px !important;
+            }
+        }
+
+    }
+
+
+
+    .attendance-filter {
+        p {
+            padding: 15px 30px 15px 0;
+        }
+    }
+
+    .attendence-col {
+        @include box-shadow;
+        margin: 15px 0;
+        min-height: 185px;
+        position: relative;
+        border: 1px solid #ececec;
+        padding-top: 25px;
+        @include border-radius(6px);
+
+        .icon {
+            width: 50px;
+            display: inline-block;
+            position: relative
+        }
+
+        a {
+            color: $primary-color;
+        }
+    }
+
+    .attendence-col-time {
+        color: rgba($light-text, .7);
+        font-size: 13px;
+    }
+}
+
+.attendance-location-map {
+    .google-map {
+        width: 100%;
+        height: 360px;
+        margin: 0 auto;
+        background: gray;
+    }
+
+    .punch-btn {
+        color: #fff;
+        @include border-radius(50px);
+        padding: 10px 12px;
+        font-size: $font-size;
+    }
+
+    .punch-out-btn {
+        border:1px solid $primary-color;
+        color: $primary-color;
+          &.active1{
+            background: $primary-color;
+            color: #fff;
+        }
+    }
+
+    .punch-in-btn {
+        border:1px solid $green-color;;
+        color: $green-color;
+        &.active1{
+            background: $green-color;
+            color: #fff;
+        }
+    }
+
+    .punch-in-time {
+        b {
+            color: $green-color
+        }
+    }
+
+    .punch-out-time {
+        b {
+            color: $primary-color
+        }
+    }
+
+}
+
+@media (max-width:639px) {
+    .attendance-filter {
+        p {
+            padding: 15px 30px 0 0;
+        }
+    }
+    .attendance-location-map{
+        .punch-btn{
+            padding: 10px 8px;
+        }
+    }
+}
+
+.attendance-view-img {
+    .punch-img {
+        a {
+            display: inline-block;
+            height: 30px;
+            padding: 0 12px;
+            color: #fff;
+            line-height: 28px;
+            @include border-radius(50px);
+            font-size: $font-size - 1;
+
+            &.active {
+                color: #fff;
+            }
+
+        }
+
+        .punch-in {
+            border: 1px solid $green-color;
+            color: $green-color;
+
+            &.active {
+                background: $green-color;
+            }
+        }
+
+        .punch-out {
+            border: 1px solid $primary-color;
+            color: $primary-color;
+
+            &.active {
+                background: $primary-color;
+            }
+        }
+    }
+}
+
+.attendance-location-map {
+    .google-map {
+        width: 100%;
+        height: 360px;
+        margin: 0 auto;
+        background: gray;
+    }
+}
+.attendance-location-icon, .attendance-img-icon{
+    font-size: $font-size + 4;
+}

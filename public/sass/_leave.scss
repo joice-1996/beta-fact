@@ -1,0 +1,104 @@
+.leave-popup-info-cover {
+    padding-left: 60px;
+}
+
+.addleave-select-type {
+    padding-left: 60px;
+
+    h5 {
+        width: 130px;
+        display: inline-block;
+        font-weight: 400;
+    }
+
+    .el-radio {
+        width: 90px;
+    }
+
+    .el-form-item {
+        margin-bottom: 10px !important;
+    }
+}
+
+.leave-select-duration {
+    padding-left: 60px;
+
+    label {
+        font-size: 12px !important;
+        color: $light-text;
+        margin-bottom: 15px;
+    }
+}
+
+.leave-select-section{
+      label {
+        font-size: 12px !important;
+        color: $light-text;
+        margin-bottom: 15px;
+    }  
+}
+
+.leave-popup-info {
+    background: #ebf2ff;
+    float: left;
+    width: 100%;
+    margin-bottom: 30px;
+    border-radius: 6px;
+    padding-top: 18px;
+
+    h5 {
+        margin: 5px 0 0;
+        font-size: 20px;
+        color: #7cacff;
+    }
+}
+
+
+@media (min-width:768px) {
+    .update-leave-info {
+        .update-leave-col:nth-child(3n+1) {
+            clear: left
+        }
+    }
+}
+
+@media (max-width:767px) {
+    .update-leave-info {
+        .update-leave-col:nth-child(2n+1) {
+            clear: left
+        }
+    }
+}
+
+.leave-main {
+    .user-name {
+        color: $text-color;
+        margin-right: 10px;
+    }
+
+    .user-id {
+        color: $light-text;
+        font-size: 12px;
+    }
+}
+
+.leave-details-popup {
+    .img-doc {
+        border: 0;
+        padding: 0;
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            padding: 5px;
+            border: 1px solid rgba($secondary-color, .15)
+        }
+    }
+
+    .el-icon-refresh,
+    .el-icon-download {
+        font-size: $font-size + 3;
+    }
+}

@@ -1,0 +1,292 @@
+    #right-pane {
+        background: #fff;
+        padding: 0;
+        position: fixed;
+        right: 0;
+        top: 0;
+        padding-top: 55px;
+        z-index: 5;
+        height: 100%;
+        -webkit-transition: width 0.3s;
+        transition: width 0.3s;
+
+        .ps {
+            height: 100%;
+        }
+    }
+
+    .side-minimize {
+        background: $secondary-color;
+        position: fixed;
+        right: 0;
+        text-align: center;
+        bottom: 30px;
+        margin: auto;
+        font-size: 14px;
+        width: 30px;
+        height: 40px;
+        line-height: 40px;
+        color: #fff;
+        @include border-radius(40px 0 0 40px);
+        -webkit-transition: width 0.3s ease 0s;
+        transition: width 0.3s ease 0s;
+        z-index: 3;
+
+        &:hover {
+            width: 40px;
+        }
+
+        .el-icon-caret-left {
+            margin-left: 5px;
+        }
+    }
+
+    .right-pane-titile {
+        background: $secondary-color;
+        color: #fff;
+        font-size: $font-size + 1;
+        position: relative;
+        letter-spacing: 0.7px;
+        padding: 22px 15px 18px;
+        cursor: pointer;
+    }
+
+    .side-toggle-ico {
+        font-size: 9px;
+        margin-left: 5px;
+    }
+
+    .recent-activity-sidebar-li {
+        padding: 8px 10px 2px;
+        border-bottom: 1px solid #f2f4f8;
+        margin: 0;
+
+        &:last-child {
+            padding-bottom: 0;
+            border-bottom: 0
+        }
+
+        .media-left {
+            position: relative;
+
+            .el-image {
+                width: 36px;
+                height: 36px;
+
+                img {
+                    object-fit: cover !important;
+                }
+            }
+        }
+    }
+
+    .user-not-active {
+        color: $primary-color;
+    }
+
+    .users-status-col {
+        padding: 15px;
+        background: #f4f6f9;
+        font-size: 11px;
+    }
+
+    .sidebar-users-status {
+        .media-body {
+            padding-top: 3px;
+        }
+
+        a {
+            position: relative;
+        }
+    }
+
+    .users-statistics h3 {
+        font-size: 20px;
+        font-weight: 800;
+    }
+
+    #right-pane {
+        li {
+            &.sidebar-users-status {
+                padding: 8px 10px;
+                border-bottom: 1px solid #f2f4f8;
+
+                &:last-child {
+                    border-bottom: 0;
+                    padding-bottom: 0;
+                }
+
+                .el-image {
+                    width: 36px;
+                    height: 36px;
+
+                    img {
+                        object-fit: cover !important;
+                    }
+                }
+            }
+        }
+    }
+
+
+
+    .sidebar-users-status a .user-status {
+        width: 12px;
+        height: 12px;
+        bottom: -13px;
+        right: -1px;
+        border: 2px solid #fff;
+        top: auto;
+    }
+
+    .users-status-col {
+        &.online h3 {
+            color: #60c04c;
+        }
+
+        &.offline h3 {
+            color: #ed2940;
+        }
+
+        &.leave h3 {
+            color: #17b5ff;
+        }
+    }
+
+
+
+    .users-status-col .users-status-col.deactive h3,
+    .users-status-col.deactive span {
+        opacity: 0.3;
+    }
+
+    .side-bar {
+        .ps {
+            height: 100%;
+        }
+
+        .animated {
+            -webkit-animation-duration: 0.3s;
+            animation-duration: 0.3s;
+            -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+        }
+
+        @-webkit-keyframes fadeIn {
+            0% {
+                right: -265px;
+            }
+
+            to {
+                right: 0;
+            }
+        }
+
+        @keyframes fadeIn {
+            0% {
+                right: -265px;
+            }
+
+            to {
+                right: 0;
+            }
+        }
+
+        .fadeIn {
+            -webkit-animation-name: fadeIn;
+            animation-name: fadeIn;
+        }
+
+        @-webkit-keyframes fadeOut {
+            0% {
+                right: 0;
+            }
+
+            to {
+                right: -265px;
+            }
+        }
+
+        @keyframes fadeOut {
+            0% {
+                right: 0;
+            }
+
+            to {
+                right: -265px;
+            }
+        }
+
+        .fadeOut {
+            -webkit-animation-name: fadeOut;
+            animation-name: fadeOut;
+        }
+    }
+
+    .recent-activity {
+        .no-data-available {
+            margin: 30px 0;
+            position: static;
+            height: auto;
+            width: auto;
+        }
+
+        /* always present */
+        .expand-transition {
+            transition: all 0.3s ease;
+            height: 30px;
+            padding: 10px;
+            background-color: #eee;
+            overflow: hidden;
+        }
+
+        /* .expand-enter defines the starting state for entering */
+        /* .expand-leave defines the ending state for leaving */
+        .expand-enter,
+        .expand-leave {
+            height: 0;
+            padding: 0 10px;
+            opacity: 0;
+        }
+
+        .media-left {
+            position: relative;
+        }
+
+        .user-status {
+            width: 11px;
+            height: 11px;
+            top: -1px;
+            right: 11px;
+            border: 2px solid #fff;
+            z-index: 1;
+        }
+    }
+
+    .users-online-refresh {
+        span {
+            color: #fff;
+            font-size: 11px;
+            position: relative;
+            top: -2px;
+            margin-right: 5px;
+        }
+    }
+
+    .online-last-time {
+        font-size: 11px;
+    }
+
+    .sidebar-users-status {
+        p {
+            margin-bottom: 0;
+        }
+    }
+
+    .recent-sec {
+        padding-top: 3px;
+
+        .added {
+            font-size: 11px;
+        }
+    }

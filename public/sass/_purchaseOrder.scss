@@ -1,0 +1,32 @@
+.purchase-order-main{  
+  [v-cloak] {
+    display: none;
+  }
+
+  .inline {
+    display: inline-block;
+  }
+
+  .total-count {
+    width: auto;
+    margin-right: 20px;
+    margin-top: 8px;
+    div {
+      font-size: 16px;
+        }
+  }      
+
+  .orderpurchase-table{
+    .el-icon-printer {
+      font-size: 15px;
+      color: #000 !important;
+      margin-right: 8px;
+      margin-left: 3px;
+    }
+     
+    .el-button.details-icon:hover{
+      background: none !important;
+     }
+  }
+ 
+}
