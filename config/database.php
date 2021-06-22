@@ -35,6 +35,16 @@ return [
 
     'connections' => [
 
+
+        'mongodb' => [
+            'driver' => 'mongodb',
+            'host' => 'localhost',
+            'port' => '27017',
+            'password' => '',
+            'username' => '',
+            'database' => 'betafact',
+        ],
+
         'sqlite' => [
             'driver' => 'sqlite',
             'url' => env('DATABASE_URL'),
