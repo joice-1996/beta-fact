@@ -15,6 +15,7 @@ class DatabaseSeeder extends Seeder
             DistrictSeeder::class,
             ShopSeeder::class,
             CategorySeeder::class,
-            SubCategorySeeder::class);
+            SubCategorySeeder::class,
+            ProductSeeder::class);
     }
 }

@@ -9,11 +9,16 @@ import locale from 'element-ui/lib/locale/lang/en';
 import { ValidationProvider, extend, ValidationObserver } from 'vee-validate';
 import * as rules from 'vee-validate/dist/rules';
 import { required } from 'vee-validate/dist/rules';
+import VueApexCharts from 'vue-apexcharts';
 import axios from 'axios';
 Vue.prototype.$hostname = 'http://localhost/beta-fact/public';
 Vue.prototype.$axios = axios;
+Vue.use(VueApexCharts)
+
+Vue.component('apexchart', VueApexCharts)
 
 
+//var csrf_token = $('meta[name="csrf-token"]').attr('content');
 Vue.config.productionTip = false
 
 

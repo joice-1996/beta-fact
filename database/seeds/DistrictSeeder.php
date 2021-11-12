@@ -13,14 +13,22 @@ class DistrictSeeder extends Seeder
     public function run()
     {
         District::insert([
-            ['distrcit_name'=>'Kottayam'],
-            ['distrcit_name'=>'Kollam'],
-            ['distrcit_name'=>'Alappuzha'],
-            ['distrcit_name'=>'Pathanamthitta'],
-            ['distrcit_name'=>'Thiruvananthapuram'],
-            ['distrcit_name'=>'Malappuram'],
-            ['distrcit_name'=>'Ernakulam'],
-            ['distrcit_name'=>'Palakkadu'],
+            ['distrcit_name'=>'Kottayam',
+            'status'=>1],
+            ['distrcit_name'=>'Kollam',
+            'status'=>1],
+            ['distrcit_name'=>'Alappuzha',
+            'status'=>1],
+            ['distrcit_name'=>'Pathanamthitta',
+            'status'=>1],
+            ['distrcit_name'=>'Thiruvananthapuram',
+            'status'=>1],
+            ['distrcit_name'=>'Malappuram',
+            'status'=>1],
+            ['distrcit_name'=>'Ernakulam',
+            'status'=>1],
+            ['distrcit_name'=>'Palakkadu',
+            'status'=>1],
         ]);
     }
 }
